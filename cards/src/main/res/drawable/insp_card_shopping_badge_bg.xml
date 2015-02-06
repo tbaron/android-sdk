@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<corners
+		android:bottomLeftRadius="@dimen/insp_corner_zero"
+		android:bottomRightRadius="@dimen/insp_card_field_spacing"
+		android:topLeftRadius="@dimen/insp_corner_zero"
+		android:topRightRadius="@dimen/insp_corner_zero" />
+
+	<padding
+		android:bottom="@dimen/insp_card_field_spacing"
+		android:left="@dimen/insp_card_padding"
+		android:right="@dimen/insp_card_padding"
+		android:top="@dimen/insp_card_field_spacing" />
+
+	<solid
+		android:color="@color/insp_card_shopping_badge_bg" />
+
+</shape>

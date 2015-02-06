@@ -1,0 +1,258 @@
+[{
+	"type": "demoHeader",
+	"title": "Advertisements",
+	"description": "Advertisements can take a few forms.<br/><br/>They can be geographically local, in which case they'll include a map, phone number, and directions. They might represent shopping products, in which case they'll include a photo, deals, etc.<br/><br/>Most advertisements include ratings and other visual flair to encourage user engagement."
+}, {
+	"rating": 3.5,
+	"distance": 12.21,
+	"phone_number": "555-555-5555",
+	"address": "Space Needle, Seattle, WA",
+	"lat_lon": {
+		"latitude": "47.620506",
+		"longitude": "-122.349277"
+	},
+	"distance": 1.8,
+	"click_to_call_url": "",
+	"title": "CARQUEST Auto Parts",
+	"description": "The Premier Mufflers & Exhaust Systems Suppliers - Find Location.",
+	"url": "",
+	"type": "localad"
+}, {
+	"display_url": "www.infospace.com",
+	"title": "A Sponsored Result With Deeplinks",
+	"description": "A sponsored result may have between 1 and 6 deeplinks which are displayed at the bottom of the card.",
+	"url": "",
+	"type": "ad",
+	"items": [{
+		"title": "Free Cheesesticks",
+		"type": "deeplink"
+	}, {
+		"title": "Wings Delivered",
+		"type": "deeplink"
+	}, {
+		"title": "Check Our Special Deals",
+		"type": "deeplink"
+	}, {
+		"title": "Any Pizza $11",
+		"type": "deeplink"
+	}, {
+		"title": "Online Coupons",
+		"type": "deeplink"
+	}, {
+		"title": "Order Now",
+		"type": "deeplink"
+	}]
+}, {
+	"display_url": "Superstockscreener.com",
+	"title": "BCOR is a Strong Buy",
+	"description": "Buy, Sell or Trade-In Your Car. Find Local Deal in Your Area Now.",
+	"url": "",
+	"type": "ad",
+	"items": [{
+		"Rating": 2.5,
+		"ReviewCount": 33077,
+		"type": "sellerRating"
+	}]
+}, {
+	"type": "shoppingGroup",
+	"items": [{
+		"price": "$167.77",
+		"on_sale": "True",
+		"rating": "4.32",
+		"review_count": "25",
+		"title": "Panasonic Lumix DMC-LX7 Digital Camera",
+		"type": "product",
+		"items": [{
+			"type": "imageGroup",
+			"items": [{
+				"url": "http://images.monoprice.com/productlargeimages/106021.jpg",
+				"type": "image"
+			}]
+		}]
+	}, {
+		"price": "$970.00",
+		"on_sale": "False",
+		"review_count": "0",
+		"free_shipping": true,
+		"rating": "2.5",
+		"title": "Sony Alpha NEX-7 24.3 Megapixel Mirrorless Camera",
+		"type": "offer",
+		"url": "",
+		"items": [{
+			"type": "imageGroup",
+			"items": [{
+				"url": "http://images.monoprice.com/productlargeimages/106031.jpg",
+				"type": "image"
+			}]
+		}]
+	}, {
+		"price": "$109.95",
+		"on_sale": "True",
+		"title": "S120 Waterproof Camera CAse.",
+		"rating": "5",
+		"type": "offer",
+		"url": "",
+		"items": [{
+			"type": "imageGroup",
+			"items": [{
+				"url": "http://images.monoprice.com/productlargeimages/121691.jpg",
+				"type": "image"
+			}]
+		}]
+	}, {
+		"price": "$99999.99",
+		"on_sale": "False",
+		"title": "... and another camer case!",
+		"rating": "2",
+		"type": "product",
+		"items": [{
+			"type": "imageGroup",
+			"items": [{
+				"url": "http://images.monoprice.com/productlargeimages/121701.jpg",
+				"type": "image"
+			}]
+		}]
+	}]
+}, {
+	"type": "demoDivider",
+	"imageName": "ic_infospace"
+}, {
+	"type": "demoHeader",
+	"title": "An Algo Result",
+	"description": "Algorithmic (organic) results are bread-and-butter of search. While they represent he most relevant results to a search, they offer little or no monetization, and as such need to be balanced with other result types depending on the desired monetization strategy."
+}, {
+	"display_url": "finance.yahoo.com",
+	"title": "BCOR: Summary for Blucora, Inc. - Yahoo! Finace",
+	"description": "View the basic BCOR stock chart on Yahoo! Finance. Chang the date range, chart type and compare Blucora, Inc. against other",
+	"url": "",
+	"type": "web"
+}, {
+	"type": "demoDivider",
+	"imageName": "ic_infospace"
+}, {
+	"type": "demoHeader",
+	"title": "News Results",
+	"description": "News results are similar to organic web results. They mix things up slightly by adding a publisher, date, and sometimes an image. They too need to be balanced with other result types depending on the monetization strategy."
+}, {
+	"source": "AP News",
+	"title": "White House fence jumper charged with assault",
+	"description": "Secret Service respond on the North Lawn of the White House after a man jumped the White House fence",
+	"thumb_url": "http://portalcdn.infospace.com/imgsvr/news/ap/20141023/772e3827610f48439428e1f7f2074731.jpg",
+	"date": 1414083900000,
+	"type": "news",
+    "url": ""
+}, {
+	"source": "People Magazine",
+	"title": "Cat finds Owner Who Moved to Nursing Home",
+	"description": "Cleo the cat was discovered hanging around the facility where owner Nancy Cowen recently moved",
+	"date": 1414083900000,
+	"type": "news",
+	"url": ""
+}, {
+	"type": "demoDivider",
+	"imageName": "ic_infospace"
+}, {
+	"type": "demoHeader",
+	"title": "A Horoscope Result",
+	"description": "This is what a horoscope result might look like.<br/>It features an icon, title, dates, and description. It is returned for a query matching a zodiac sign and the description is updated daily."
+}, {
+	"code": "CAN",
+	"meter": "959",
+	"title": "Cancer",
+	"description": "You'll find yourself interested in what makes you tick, where you come from and how on earth you're able to pick up pencils with your toes. Sounds like now would be a good time to shake the family tree for some interesting anecdotes about your nearest and dearest. Not only will you learn tons of stories and tidbits about relatives both near and far, it'll give you much to think about regarding your past -- and your future.",
+	"type": "horoscope"
+}, {
+	"type": "demoDivider",
+	"imageName": "ic_infospace"
+}, {
+	"type": "demoHeader",
+	"title": "Related Results",
+	"description": "These results can drive user engagement through query refinement."
+}, {
+	"type": "relatedGroup",
+	"items": [{
+		"title": "Used Cars",
+		"type": "related"
+	}, {
+		"title": "Car Stuck Mud",
+		"type": "related"
+	}, {
+		"title": "Cool Cars",
+		"type": "related"
+	}, {
+		"title": "Car Rental",
+		"type": "related"
+	}, {
+		"title": "Die Cast Cars Catalogs",
+		"type": "related"
+	}, {
+		"title": "Lamborghini",
+		"type": "related"
+	}, {
+		"title": "Car Machine.com",
+		"type": "related"
+	}, {
+		"title": "Champ Car",
+		"type": "related"
+	}]
+}, {
+	"type": "demoDivider",
+	"imageName": "ic_infospace"
+}, {
+	"type": "demoHeader",
+	"title": "A Video Result",
+	"description": "This demonstrates what a video result might look like.<br/>It features a title, url, and duration. The image is blurred below the text to improve readability. Clicking it would likely launch the default video app."
+}, {
+	"title": "Don't Buy an Audi R8 Until You've Seen This!",
+	"display_url": "youtube.com",
+	"length": "71",
+	"thumb_url": "http://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Geneva_MotorShow_2013_-_Audi_R8_LMS_ultra_front_left.jpg/1280px-Geneva_MotorShow_2013_-_Audi_R8_LMS_ultra_front_left.jpg",
+	"type": "video",
+	"url": ""
+}, {
+	"type": "demoDivider",
+	"imageName": "ic_infospace"
+}, {
+	"type": "demoHeader",
+	"title": "A Weather Result",
+	"description": "This is what a weather forecast might look like when searching for weather and a location. It includes a forecast for the next 4 days as well as a summary of current conditions."
+}, {
+	"location": "Seattle, WA",
+	"temperature": "72",
+	"wind_chill": "69",
+	"wind_direction": "SE",
+	"wind_speed": "3",
+	"forecast": [{
+		"date": 1413615600000,
+		"description": "Partly Cloudy",
+		"thumb_url": "http://s.imwx.com/img/wxicon/70/30.png",
+		"temperature_min": "54",
+		"temperature_max": "66",
+		"type": "weatherForecast"
+	}, {
+		"date": 1413702000000,
+		"description": "Mostly Sunny",
+		"thumb_url": "http://s.imwx.com/img/wxicon/70/34.png",
+		"temperature_min": "57",
+		"temperature_max": "71",
+		"type": "weatherForecast"
+	}, {
+		"date": 1413788400000,
+		"description": "Rain",
+		"thumb_url": "http://s.imwx.com/img/wxicon/70/12.png",
+		"temperature_min": "52",
+		"temperature_max": "62",
+		"type": "weatherForecast"
+	}, {
+		"date": 1413874800000,
+		"description": "AM Showers",
+		"thumb_url": "http://s.imwx.com/img/wxicon/70/39.png",
+		"temperature_min": "52",
+		"temperature_max": "61",
+		"type": "weatherForecast"
+	}],
+	"date": 1413564300000,
+	"description": "Partly Cloudy",
+	"thumb_url": "http://s.imwx.com/img/wxicon/120/26.png",
+	"type": "weather"
+}]

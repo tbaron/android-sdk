@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	   android:shape="rectangle">
+
+	<padding
+		android:bottom="@dimen/insp_card_padding"
+		android:left="@dimen/insp_card_padding"
+		android:right="@dimen/insp_card_padding"
+		android:top="@dimen/insp_card_padding" />
+
+	<solid
+		android:color="@color/insp_card_bg" />
+
+	<stroke
+		android:width="@dimen/insp_card_border_width"
+		android:color="@color/insp_card_border" />
+
+</shape>

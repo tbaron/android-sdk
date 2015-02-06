@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	style="@style/insp_card_horoscope"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	tools:layout_margin="@dimen/insp_card_padding">
+
+	<ImageView
+		style="@style/insp_card_horoscope_image"
+		android:id="@id/insp_card_image"
+		android:layout_width="@dimen/insp_card_horoscope_image"
+		android:layout_height="@dimen/insp_card_horoscope_image"
+		android:scaleType="fitCenter"
+		tools:ignore="contentDescription"
+		tools:src="@drawable/insp_placeholder" />
+
+	<TextView
+		style="@style/insp_card_horoscope_title"
+		android:id="@id/insp_card_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_toEndOf="@id/insp_card_image"
+		android:layout_toRightOf="@id/insp_card_image"
+		tools:text="Leo" />
+
+	<TextView
+		style="@style/insp_card_horoscope_date_range"
+		android:id="@id/insp_card_date_range"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/insp_card_title"
+		android:layout_toEndOf="@id/insp_card_title"
+		android:layout_toRightOf="@id/insp_card_title"
+		tools:text="Jul 23 - Aug 22" />
+
+	<TextView
+		style="@style/insp_card_horoscope_date"
+		android:id="@id/insp_card_date"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_alignBaseline="@id/insp_card_image"
+		android:layout_below="@id/insp_card_title"
+		android:layout_toEndOf="@id/insp_card_image"
+		android:layout_toRightOf="@id/insp_card_image"
+		tools:text="Thursday, Oct 2 2014" />
+
+	<TextView
+		style="@style/insp_card_horoscope_description"
+		android:id="@id/insp_card_description"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/insp_card_date"
+		tools:text="Expect some positive developments today that impact the whole family, Leo. Perhaps you or your mate will receive word of a significant raise or great job opportunity. Perhaps you meet the one who is right for you, and you know it the instant you shake hands. Whichever it is, don't let the opportunity pass. If you don't seize it, someone else surely will." />
+
+</RelativeLayout>

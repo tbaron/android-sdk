@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+	<item>
+		<shape android:shape="rectangle">
+			<padding
+				android:bottom="@dimen/insp_card_border_width"
+				android:left="@dimen/insp_card_border_width"
+				android:right="@dimen/insp_card_border_width"
+				android:top="@dimen/insp_card_border_width" />
+			<solid
+				android:color="#ffffff" />
+			<stroke
+				android:width="@dimen/insp_card_border_width"
+				android:color="@color/insp_card_border" />
+		</shape>
+	</item>
+	<item>
+		<bitmap
+			android:src="@drawable/phone_cards_list"
+			android:gravity="right|bottom" />
+	</item>
+	<item>
+		<shape android:shape="rectangle">
+			<solid android:color="#80f57c2d" />
+		</shape>
+	</item>
+</layer-list>

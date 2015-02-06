@@ -1,0 +1,26 @@
+[{
+	"type": "demoDivider",
+	"imageName": "ic_lg_infospace"
+}, {
+	"type": "demoHeader",
+	"title": "InfoSpace Cards SDK Demo",
+	"description": "<p>This is a demonstration of the InfoSpace cards SDK. It shows ways that you can display structured result data as cards within almost any app.</p><p>Select a category to continue.</p>"
+}, {
+	"type": "demoCategory",
+	"title": "List",
+	"description": "Cards that work well in a single-column list layout",
+	"category": "results_list"
+}, {
+    "type": "demoCategory",
+    "title": "Grid",
+    "description": "Cards that work well in a multi-column grid layout",
+    "category": "results_grid"
+}, {
+    "type": "demoCategory",
+    "title": "Event Log",
+    "description": "View a log of all card interactions",
+    "category": "event_log"
+}, {
+	"type": "demoDivider",
+	"imageName": "ic_infospace"
+}]

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="insp_white">#ffffff</color>
+	<color name="insp_white_90">#e6ffffff</color>
+	<color name="insp_black">#000000</color>
+	<color name="insp_accent_blue">#00b8de</color>
+	<color name="insp_accent_orange">#f57c2d</color>
+	<color name="insp_accent_green">#669900</color>
+
+	<color name="insp_grey_lighter">#e8e8e8</color>
+	<color name="insp_grey_light">#dadada</color>
+	<color name="insp_grey_dark">#737373</color>
+	<color name="insp_grey_darker">#494949</color>
+
+	<!-- One-off Colors -->
+
+	<color name="insp_accent_selection">#cfeaf8</color>
+
+	<color name="insp_red">#b83408</color>
+
+	<!-- Styles -->
+
+	<color name="insp_card_border">@color/insp_grey_light</color>
+	<color name="insp_card_bg">@color/insp_white</color>
+	<color name="insp_card_bg_selected">@color/insp_accent_selection</color>
+
+	<color name="insp_card_url_text">@color/insp_accent_blue</color>
+	<color name="insp_card_title_text">@color/insp_grey_darker</color>
+	<color name="insp_card_subtitle_text">@color/insp_grey_dark</color>
+	<color name="insp_card_address_text">@color/insp_grey_darker</color>
+	<color name="insp_card_description_text">@color/insp_grey_dark</color>
+	<color name="insp_card_distance_text">@color/insp_grey_darker</color>
+	<color name="insp_card_source_text">@color/insp_accent_blue</color>
+	<color name="insp_card_date_text">@color/insp_grey_dark</color>
+
+	<color name="insp_card_ad_indicator">@color/insp_grey_light</color>
+
+	<color name="insp_card_map_marker">@color/insp_accent_blue</color>
+
+	<color name="insp_card_related_title">@color/insp_accent_blue</color>
+
+	<color name="insp_card_shopping_badge_bg">@color/insp_accent_orange</color>
+	<color name="insp_card_shopping_badge_text">@color/insp_white</color>
+	<color name="insp_card_shopping_price_text">@color/insp_accent_blue</color>
+	<color name="insp_card_shopping_promo_text">@color/insp_accent_green</color>
+
+	<color name="insp_action_text">@color/insp_accent_blue</color>
+	<color name="insp_action_bg_selected">@color/insp_card_bg_selected</color>
+	<color name="insp_action_bg_unselected">@color/insp_card_bg</color>
+
+	<color name="insp_deeplink_bg_selected">@color/insp_card_bg_selected</color>
+	<color name="insp_deeplink_bg_unselected">@android:color/transparent</color>
+
+	<color name="insp_card_horoscope_date_text">@color/insp_grey_darker</color>
+	<color name="insp_card_horoscope_date_range_text">@color/insp_grey_dark</color>
+
+	<color name="insp_card_weather_temperature">@color/insp_grey_darker</color>
+	<color name="insp_card_weather_description">@color/insp_grey_darker</color>
+	<color name="insp_card_weather_wind">@color/insp_grey_dark</color>
+
+	<color name="insp_card_video_bg">@color/insp_black</color>
+	<color name="insp_card_video_bg_selected">@color/insp_action_bg_selected</color>
+	<color name="insp_card_video_title">@color/insp_white</color>
+	<color name="insp_card_video_url">@color/insp_white</color>
+	<color name="insp_card_video_duration">@color/insp_white</color>
+	<color name="insp_card_video_indicator">@color/insp_white_90</color>
+
+</resources>

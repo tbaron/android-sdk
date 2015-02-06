@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	style="@style/insp_card_weather"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	tools:layout_margin="@dimen/insp_card_padding">
+
+	<RelativeLayout
+		style="@style/insp_card_weather_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<TextView
+			style="@style/insp_card_weather_title"
+			android:id="@id/insp_card_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			tools:text="Seattle, WA" />
+
+		<TextView
+			style="@style/insp_card_weather_temperature"
+			android:id="@id/insp_card_temperature"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_below="@id/insp_card_title"
+			tools:text="72°" />
+
+		<ImageView
+			style="@style/insp_card_weather_image"
+			android:id="@id/insp_card_image"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_above="@id/insp_layout_baseline"
+
+			android:layout_alignParentTop="true"
+			android:layout_toEndOf="@id/insp_card_temperature"
+
+			android:layout_toLeftOf="@id/insp_card_description"
+			android:layout_toRightOf="@id/insp_card_temperature"
+
+			android:layout_toStartOf="@id/insp_card_description"
+			android:scaleType="centerInside"
+			tools:ignore="contentDescription"
+			tools:src="@drawable/insp_placeholder" />
+
+		<TextView
+			style="@style/insp_card_weather_description"
+			android:id="@id/insp_card_description"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@id/insp_card_wind_chill"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			tools:text="Partly Cloudy" />
+
+		<TextView
+			style="@style/insp_card_weather_wind_chill"
+			android:id="@id/insp_card_wind_chill"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@id/insp_card_wind"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			tools:text="Feels like: 69" />
+
+		<TextView
+			style="@style/insp_card_weather_wind"
+			android:id="@id/insp_card_wind"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_above="@id/insp_layout_baseline"
+			android:layout_alignParentEnd="true"
+			android:layout_alignParentRight="true"
+			tools:text="Wind: 3 mph" />
+
+		<View
+			android:id="@id/insp_layout_baseline"
+			android:layout_width="0dp"
+			android:layout_height="0dp"
+			android:layout_below="@id/insp_card_temperature" />
+
+	</RelativeLayout>
+
+	<LinearLayout
+		style="@style/insp_card_weather_forecasts"
+		android:id="@id/insp_card_forecasts"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<include layout="@layout/insp_card_weather_forecast" />
+
+		<include layout="@layout/insp_card_weather_forecast" />
+
+		<include layout="@layout/insp_card_weather_forecast" />
+
+		<include layout="@layout/insp_card_weather_forecast" />
+
+	</LinearLayout>
+
+</LinearLayout>

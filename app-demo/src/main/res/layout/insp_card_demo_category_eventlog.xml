@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	style="@style/insp_card"
+	android:background="@drawable/bg_card_category_eventlog"
+	android:layout_width="match_parent"
+	android:layout_height="200dp"
+	tools:layout_margin="@dimen/insp_card_padding">
+
+	<TextView
+		style="@style/insp_card_title"
+		android:textSize="@dimen/insp_text_xlarge"
+		android:fontFamily="sans-serif-light"
+		android:textStyle="normal"
+		android:textColor="@color/insp_white"
+		android:id="@id/insp_card_title"
+
+		android:layout_marginLeft="@dimen/insp_card_padding"
+		android:layout_marginStart="@dimen/insp_card_padding"
+		android:layout_above="@id/insp_card_description"
+
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		tools:text="Sample Title" />
+
+	<TextView
+		style="@style/insp_card_description"
+		android:textSize="@dimen/insp_text_small"
+		android:textColor="@color/insp_white_90"
+		android:id="@id/insp_card_description"
+
+		android:layout_marginLeft="@dimen/insp_card_padding"
+		android:layout_marginStart="@dimen/insp_card_padding"
+		android:layout_marginBottom="@dimen/insp_card_padding"
+		android:layout_alignParentBottom="true"
+
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		tools:text="Sample description..." />
+
+</RelativeLayout>

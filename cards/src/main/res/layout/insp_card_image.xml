@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+	style="@style/insp_card_image"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="@dimen/insp_card_image_size"
+	android:layout_height="@dimen/insp_card_image_size"
+	tools:layout_margin="@dimen/insp_card_padding">
+
+	<ImageView
+		android:id="@id/insp_card_image"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:adjustViewBounds="true"
+		android:scaleType="centerCrop"
+		tools:ignore="contentDescription"
+		tools:src="@drawable/insp_placeholder" />
+
+</FrameLayout>

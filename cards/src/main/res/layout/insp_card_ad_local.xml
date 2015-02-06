@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	style="@style/insp_card_ad"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	tools:layout_margin="@dimen/insp_card_padding">
+
+	<ImageView
+		style="@style/insp_card_ad_map"
+		android:id="@id/insp_card_map"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/insp_card_map_height"
+		android:contentDescription="@string/insp_action_directions_title"
+		tools:background="#ff0000" />
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:padding="@dimen/insp_card_padding">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:baselineAligned="false"
+			android:gravity="top"
+			android:orientation="horizontal">
+
+			<TextView
+				style="@style/insp_card_ad_title"
+				android:id="@id/insp_card_title"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				tools:text="Sample Title With a Really Long Value That Wraps To The Next Line." />
+
+			<TextView
+				style="@style/insp_card_ad_indicator"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+		</LinearLayout>
+
+		<TextView
+			style="@style/insp_card_ad_description"
+			android:id="@id/insp_card_description"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			tools:text="Sample description" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:baselineAligned="false"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<RatingBar
+				style="@style/insp_card_ad_rating"
+				android:id="@id/insp_card_rating"
+				android:layout_width="wrap_content"
+				android:layout_height="match_parent"
+				tools:rating="3.5" />
+
+			<TextView
+				style="@style/insp_card_ad_distance"
+				android:id="@id/insp_card_distance"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:gravity="end"
+				tools:text="2.5 miles" />
+
+		</LinearLayout>
+
+		<com.infospace.sdk.widgets.TwoColumnLayout
+			style="@style/insp_card_ad_deeplinks"
+			android:id="@id/insp_card_deeplinks"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:showDividers="none"
+			android:visibility="gone" />
+
+	</LinearLayout>
+
+	<LinearLayout
+		style="@style/insp_card_ad_actions"
+		android:id="@id/insp_card_actions"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal">
+
+		<include layout="@layout/insp_action_call" />
+
+		<include layout="@layout/insp_action_directions" />
+
+	</LinearLayout>
+
+</LinearLayout>

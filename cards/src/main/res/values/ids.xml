@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<item name="insp_tag_layout_id" type="id" />
+	<item name="insp_tag_model_id" type="id" />
+
+	<item name="insp_layout_baseline" type="id" />
+
+	<item name="insp_card_actions" type="id" />
+	<item name="insp_card_deeplinks" type="id" />
+	<item name="insp_card_description" type="id" />
+	<item name="insp_card_rating" type="id" />
+	<item name="insp_card_title" type="id" />
+	<item name="insp_card_url" type="id" />
+	<item name="insp_card_address" type="id" />
+	<item name="insp_card_distance" type="id" />
+	<item name="insp_card_results" type="id" />
+	<item name="insp_card_badge" type="id" />
+	<item name="insp_card_promo" type="id" />
+	<item name="insp_card_price" type="id" />
+	<item name="insp_card_image" type="id" />
+	<item name="insp_card_progress" type="id" />
+	<item name="insp_card_map" type="id" />
+	<item name="insp_card_subtitle" type="id" />
+	<item name="insp_card_date" type="id" />
+	<item name="insp_card_date_range" type="id" />
+	<item name="insp_card_temperature" type="id" />
+	<item name="insp_card_wind" type="id" />
+	<item name="insp_card_forecasts" type="id" />
+	<item name="insp_card_duration" type="id" />
+	<item name="insp_card_source" type="id" />
+	<item name="insp_card_indicator" type="id" />
+	<item name="insp_layout_right1" type="id" />
+	<item name="insp_layout_right2" type="id" />
+	<item name="insp_card_wind_chill" type="id" />
+
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	style="@style/insp_card_weather_forecast"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="0dp"
+	android:layout_height="wrap_content"
+	android:layout_weight="1"
+	android:orientation="vertical"
+	tools:layout_width="wrap_content">
+
+	<TextView
+		style="@style/insp_card_weather_forecast_title"
+		android:id="@id/insp_card_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		tools:text="Tues" />
+
+	<TextView
+		style="@style/insp_card_weather_forecast_date"
+		android:id="@id/insp_card_date"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		tools:text="July 1" />
+
+	<ImageView
+		style="@style/insp_card_weather_forecast_image"
+		android:id="@id/insp_card_image"
+		android:layout_width="match_parent"
+		android:layout_height="@dimen/insp_card_weather_forecast_image"
+		android:adjustViewBounds="true"
+
+		tools:ignore="contentDescription"
+		tools:src="@drawable/insp_placeholder" />
+
+	<TextView
+		style="@style/insp_card_weather_forecast_temperature"
+		android:id="@id/insp_card_temperature"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		tools:text="72°" />
+
+</LinearLayout>

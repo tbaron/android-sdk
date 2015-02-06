@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<declare-styleable name="FixedSizeLinearLayout">
+		<attr name="numVisibleItems" format="float" />
+	</declare-styleable>
+
+	<declare-styleable name="FixedGridView">
+		<attr name="border">
+			<flag name="none" value="0" />
+			<flag name="top" value="1" />
+			<flag name="right" value="2" />
+			<flag name="bottom" value="4" />
+			<flag name="left" value="8" />
+			<flag name="outside" value="15" />
+			<flag name="inside_horizontal" value="16" />
+			<flag name="inside_vertical" value="32" />
+			<flag name="inside" value="48" />
+			<flag name="all" value="63" />
+		</attr>
+		<attr name="border_color" format="color" />
+	</declare-styleable>
+
+</resources>

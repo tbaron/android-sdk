@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:paddingLeft="@dimen/insp_card_padding"
+	android:paddingRight="@dimen/insp_card_padding"
+	android:paddingTop="@dimen/insp_card_padding"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<TextView
+		style="@style/insp_card_title"
+		android:maxLines="100"
+		android:id="@id/insp_card_title"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		tools:text="Sample" />
+
+	<TextView
+		style="@style/insp_card_description"
+		android:maxLines="100"
+		android:id="@id/insp_card_description"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		tools:text="Sample" />
+
+</LinearLayout>

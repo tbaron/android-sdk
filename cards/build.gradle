@@ -1,0 +1,52 @@
+apply plugin: 'com.android.library'
+
+dependencies {
+	def gson = 'com.google.code.gson:gson:2.2.4'
+	def lang3 = 'org.apache.commons:commons-lang3:3.3.2'
+
+	/* The dependencies may need to be revised as Android supported improves.
+	 * Mockito currently requires dexmaker to support Android.
+	 */
+	androidTestCompile gson
+	androidTestCompile lang3
+	androidTestCompile 'org.mockito:mockito-core:1.10.8'
+	androidTestCompile 'com.google.dexmaker:dexmaker:1.1'
+	androidTestCompile 'com.google.dexmaker:dexmaker-mockito:1.1'
+
+	/* The com.jakewharton.espresso dependencies will need replacement when
+	 * Google publishes official Gradle/Maven support for Espresso.
+	 */
+	androidTestCompile 'com.jakewharton.espresso:espresso:1.1-r3'
+	androidTestCompile 'com.jakewharton.espresso:espresso-runner:1.1-r3'
+	androidTestCompile 'com.jakewharton.espresso:espresso-runner-runtime:1.1-r3'
+	androidTestCompile 'com.jakewharton.espresso:espresso-support-v4:1.1-r3'
+
+	compile gson
+	compile lang3
+	compile('com.github.kevinsawicki:timeago:1.0.1@jar')
+	compile('com.squareup.picasso:picasso:2.3.4')
+}
+
+android {
+	compileSdkVersion 20
+	buildToolsVersion "20.0.0"
+
+	defaultConfig {
+		minSdkVersion 14
+		targetSdkVersion 20
+		testInstrumentationRunner 'com.infospace.sdk.CustomInstrumentationTestRunner'
+	}
+
+	packagingOptions {
+		exclude 'META-INF/LICENSE.txt'
+		exclude 'META-INF/NOTICE.txt'
+		exclude 'LICENSE.txt'
+	}
+}
+
+if (project.hasProperty('versionCode')) {
+	android.defaultConfig.versionCode = versionCode.toInteger()
+}
+if (project.hasProperty('versionName')) {
+	android.defaultConfig.versionName = versionName
+}

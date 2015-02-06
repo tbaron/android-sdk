@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+	style="@style/insp_action_email"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="wrap_content"
+	android:layout_height="@dimen/insp_card_action_height"
+	android:layout_weight="1"
+	tools:ignore="MergeRootFrame">
+
+	<TextView
+		style="@style/insp_action_email_title"
+		android:id="@id/insp_card_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+</FrameLayout>

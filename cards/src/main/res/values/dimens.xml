@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Values from http://developer.android.com/design/style/typography.html -->
+	<dimen name="insp_text_micro">12sp</dimen>
+	<dimen name="insp_text_small">14sp</dimen>
+	<dimen name="insp_text_medium">18sp</dimen>
+	<dimen name="insp_text_large">22sp</dimen>
+	<dimen name="insp_text_xlarge">40sp</dimen>
+	<dimen name="insp_text_huge">56sp</dimen>
+
+	<!-- Used to specify shapes with a single rounded corner. Must be non-zero or all corners will be rounded. -->
+	<dimen name="insp_corner_zero">0.1dp</dimen>
+
+	<dimen name="insp_card_border_width">0.667dp</dimen>
+	<dimen name="insp_card_padding">10dp</dimen>
+
+	<dimen name="insp_card_field_spacing">3dp</dimen>
+
+	<dimen name="insp_card_title_text">@dimen/insp_text_medium</dimen>
+	<dimen name="insp_card_address_text">@dimen/insp_text_small</dimen>
+	<dimen name="insp_card_description_text">@dimen/insp_text_small</dimen>
+	<dimen name="insp_card_distance_text">@dimen/insp_text_micro</dimen>
+	<dimen name="insp_card_url_text">@dimen/insp_text_micro</dimen>
+	<dimen name="insp_card_source_text">@dimen/insp_text_micro</dimen>
+	<dimen name="insp_card_date_text">@dimen/insp_text_micro</dimen>
+	<dimen name="insp_card_map_height">120dp</dimen>
+	<dimen name="insp_card_action_height">40dp</dimen>
+
+	<dimen name="insp_card_news_image">150dp</dimen>
+
+	<dimen name="insp_card_ad_indicator_corner">4dp</dimen>
+	<dimen name="insp_card_ad_indicator_padding_vertical">1dp</dimen>
+	<dimen name="insp_card_ad_indicator_padding_horizontal">4dp</dimen>
+	<dimen name="insp_card_ad_indicator_text">@dimen/insp_text_micro</dimen>
+
+	<dimen name="insp_card_horoscope_image">40dp</dimen>
+
+	<dimen name="insp_card_shopping_image">100dp</dimen>
+	<dimen name="insp_card_shopping_price_text">@dimen/insp_text_small</dimen>
+	<dimen name="insp_card_shopping_promo_text">@dimen/insp_text_micro</dimen>
+
+	<dimen name="insp_card_weather_temperature">@dimen/insp_text_huge</dimen>
+	<dimen name="insp_card_weather_wind">@dimen/insp_text_micro</dimen>
+	<dimen name="insp_card_weather_forecast_image">48dp</dimen>
+
+	<dimen name="insp_card_video_height">200dp</dimen>
+	<dimen name="insp_card_video_gradient_top">32dp</dimen>
+	<dimen name="insp_card_video_gradient_bottom">24dp</dimen>
+	<dimen name="insp_card_video_gradient_fade">12dp</dimen>
+	<dimen name="insp_card_video_indicator_height">50dp</dimen>
+	<dimen name="insp_card_video_indicator_corner">6dp</dimen>
+
+	<dimen name="insp_card_image_size">100dp</dimen>
+
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<declare-styleable name="CenteredListView">
+		<attr name="maxWidth" format="dimension" />
+		<attr name="defaltPadding" format="dimension" />
+	</declare-styleable>
+
+</resources>

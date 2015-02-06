@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+	style="@style/insp_card_video"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="@dimen/insp_card_video_height"
+	tools:layout_margin="@dimen/insp_card_padding">
+
+	<ImageView
+		style="@style/insp_card_video_image"
+		android:id="@id/insp_card_image"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:background="#ff0000"
+		tools:ignore="contentDescription" />
+
+	<TextView
+		style="@style/insp_card_video_title"
+		android:id="@id/insp_card_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		tools:text="Sample Title With a Really Long Value That Wraps To The Next Line." />
+
+	<TextView
+		style="@style/insp_card_video_url"
+		android:id="@id/insp_card_url"
+		android:layout_width="0dp"
+
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+
+		android:layout_alignParentLeft="true"
+		android:layout_alignParentStart="true"
+
+		android:layout_toLeftOf="@id/insp_card_duration"
+
+		android:layout_toStartOf="@id/insp_card_duration"
+		tools:text="www.sample.url" />
+
+	<TextView
+		style="@style/insp_card_video_duration"
+		android:id="@id/insp_card_duration"
+		android:layout_width="wrap_content"
+
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:layout_alignParentEnd="true"
+
+		android:layout_alignParentRight="true"
+		tools:text="1:10" />
+
+</RelativeLayout>

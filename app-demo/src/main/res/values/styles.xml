@@ -1,0 +1,41 @@
+<resources>
+
+	<style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+	</style>
+
+	<style name="my_card_theme">
+		<item name="android:background">#ff0000</item>
+	</style>
+
+	<style name="card_list">
+		<item name="android:clipToPadding">false</item>
+		<item name="android:padding">@dimen/activity_margin</item>
+		<item name="android:scrollbarStyle">outsideOverlay</item>
+
+		<item name="android:divider">@android:color/transparent</item>
+		<item name="android:dividerHeight">@dimen/insp_card_padding</item>
+		<item name="android:showDividers">middle</item>
+
+		<item name="android:listSelector">@android:color/transparent</item>
+
+		<item name="android:scrollingCache">false</item>
+		<item name="android:animationCache">false</item>
+	</style>
+
+
+	<!-- Shopping Results -->
+
+	<style name="insp_card_event" parent="insp_card">
+		<item name="android:padding">0dp</item>
+	</style>
+
+	<style name="insp_card_event_content">
+		<item name="android:padding">@dimen/insp_card_padding</item>
+	</style>
+
+	<style name="insp_card_event_badge">
+		<item name="android:background">@drawable/insp_demo_card_event_badge_bg</item>
+		<item name="android:textColor">@color/insp_white</item>
+	</style>
+
+</resources>

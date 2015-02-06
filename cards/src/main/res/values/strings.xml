@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="google_maps_api_key" />
+
+	<string name="insp_card_distance_format">%.2f Miles</string>
+
+	<string name="insp_card_ad_indicator">AD</string>
+
+	<string name="insp_card_related_title">Related Searches</string>
+
+	<string name="insp_card_shopping_title">Shopping</string>
+	<string name="insp_card_shopping_free_shipping">Free Shipping</string>
+
+	<string name="insp_action_call_title">Call</string>
+	<string name="insp_action_directions_title">Directions</string>
+	<string name="insp_action_email_title">Email</string>
+
+	<string name="insp_card_horoscope_date_format">%1$tA, %1$tb %1$te %1$tY</string>
+	<string name="insp_card_horoscope_date_range_format">%1$tb %1$te - %2$tb %2$te</string>
+
+	<string name="insp_card_weather_temperature_format">%.0f°</string>
+	<string name="insp_card_weather_wind_format">Wind: %1$s %2$.0fmph</string>
+	<string name="insp_card_weather_wind_chill_format">Feels like: %d</string>
+
+	<string name="insp_card_weather_forecast_title_format">%ta</string>
+	<string name="insp_card_weather_forecast_date_format">%1$tb %1$te</string>
+	<string name="insp_card_weather_forecast_temperature_format">%1$.0f° | %2$.0f°</string>
+
+</resources>

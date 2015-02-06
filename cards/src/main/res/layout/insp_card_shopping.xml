@@ -1,0 +1,59 @@
+<FrameLayout
+	style="@style/insp_card_shopping"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		style="@style/insp_card_shopping_content"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<ImageView
+			style="@style/insp_card_shopping_image"
+			android:id="@id/insp_card_image"
+			android:layout_width="match_parent"
+			android:layout_height="@dimen/insp_card_shopping_image"
+			android:adjustViewBounds="false"
+			android:scaleType="fitCenter"
+			tools:ignore="contentDescription"
+			tools:src="@drawable/insp_placeholder" />
+
+		<TextView
+			style="@style/insp_card_shopping_title"
+			android:id="@id/insp_card_title"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			tools:text="Sample Title" />
+
+		<RatingBar
+			style="@style/insp_card_shopping_rating"
+			android:id="@id/insp_card_rating"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			tools:rating="2.5" />
+
+		<TextView
+			style="@style/insp_card_shopping_price"
+			android:id="@id/insp_card_price"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			tools:text="$169.99" />
+
+		<TextView
+			style="@style/insp_card_shopping_promo"
+			android:id="@id/insp_card_promo"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			tools:text="Free Shipping" />
+	</LinearLayout>
+
+	<TextView
+		style="@style/insp_card_shopping_badge"
+		android:id="@id/insp_card_badge"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+</FrameLayout>

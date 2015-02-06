@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+	style="@style/insp_card_shopping_group"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical">
+
+	<TextView
+		style="@style/insp_card_shopping_group_title"
+		android:id="@id/insp_card_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+
+	<HorizontalScrollView
+		style="@style/insp_card_shopping_group_results_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<com.infospace.sdk.widgets.FixedSizeLinearLayout
+			style="@style/insp_card_shopping_group_results"
+			android:id="@id/insp_card_results"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			tools:layoutAnimation="@null" />
+
+	</HorizontalScrollView>
+
+</LinearLayout>

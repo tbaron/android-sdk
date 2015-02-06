@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- Standard Result Styles -->
+
+	<style name="insp_card">
+		<item name="android:background">@drawable/insp_card_bg</item>
+	</style>
+
+	<style name="insp_card_title">
+		<!--TODO: why 8dp padding? -->
+		<item name="android:paddingBottom">8dp</item>
+		<item name="android:textColor">@color/insp_card_title_text</item>
+		<item name="android:textSize">@dimen/insp_card_title_text</item>
+
+		<item name="android:maxLines">2</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+
+	<style name="insp_card_subtitle">
+		<item name="android:textColor">@color/insp_card_subtitle_text</item>
+
+		<item name="android:lines">1</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+
+	<style name="insp_card_description">
+		<!--TODO: why 8dp padding? -->
+		<item name="android:paddingBottom">8dp</item>
+		<!--TODO: consider moving line-count to specific cards-->
+		<item name="android:maxLines">2</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:textColor">@color/insp_card_description_text</item>
+		<item name="android:textSize">@dimen/insp_card_description_text</item>
+	</style>
+
+	<!--
+		insp_card_rating is a copy of android:Widget.Holo.RatingBar.Small
+		Do not reference as parent for compatibility with pre-Holo devices
+	-->
+	<style name="insp_card_rating">
+		<item name="android:indeterminateOnly">false</item>
+		<item name="android:progressDrawable">@drawable/insp_rating_small</item>
+		<item name="android:indeterminateDrawable">@drawable/insp_rating_small</item>
+		<item name="android:minHeight">16dip</item>
+		<item name="android:maxHeight">16dip</item>
+		<item name="android:thumb">@null</item>
+		<item name="android:isIndicator">true</item>
+	</style>
+
+	<style name="insp_card_url">
+		<item name="android:ellipsize">end</item>
+		<item name="android:maxLength">40</item>
+		<item name="android:textColor">@color/insp_card_url_text</item>
+		<item name="android:textSize">@dimen/insp_card_url_text</item>
+	</style>
+
+	<style name="insp_card_address">
+		<item name="android:textColor">@color/insp_card_address_text</item>
+		<item name="android:textSize">@dimen/insp_card_address_text</item>
+	</style>
+
+	<style name="insp_card_distance">
+		<item name="android:textColor">@color/insp_card_distance_text</item>
+		<item name="android:textSize">@dimen/insp_card_distance_text</item>
+	</style>
+
+	<style name="insp_card_date">
+		<item name="android:textColor">@color/insp_card_date_text</item>
+		<item name="android:textSize">@dimen/insp_card_date_text</item>
+	</style>
+
+	<style name="insp_card_source">
+		<item name="android:textColor">@color/insp_card_source_text</item>
+		<item name="android:textSize">@dimen/insp_card_source_text</item>
+	</style>
+
+	<style name="insp_card_deeplinks">
+		<item name="android:paddingTop">@dimen/insp_card_field_spacing</item>
+	</style>
+
+	<style name="insp_card_actions">
+		<item name="android:divider">@drawable/insp_card_divider_line</item>
+		<item name="android:showDividers">beginning|middle|end</item>
+		<item name="android:layout_marginBottom">@dimen/insp_card_border_width</item>
+	</style>
+
+
+	<!-- Ad Results -->
+
+	<style name="insp_card_ad" parent="insp_card">
+		<item name="android:padding">0dp</item>
+		<item name="android:divider">@drawable/insp_card_divider_line</item>
+		<item name="android:showDividers">middle</item>
+	</style>
+
+	<style name="insp_card_ad_map">
+		<item name="android:layout_marginTop">@dimen/insp_card_border_width</item>
+		<item name="android:layout_marginLeft">@dimen/insp_card_border_width</item>
+		<item name="android:layout_marginRight">@dimen/insp_card_border_width</item>
+	</style>
+
+	<style name="insp_card_ad_indicator">
+		<item name="android:background">@drawable/insp_card_ad_indicator_bg</item>
+		<item name="android:gravity">center</item>
+		<item name="android:layout_marginLeft">@dimen/insp_card_field_spacing</item>
+		<item name="android:paddingLeft">@dimen/insp_card_padding</item>
+		<item name="android:paddingRight">@dimen/insp_card_padding</item>
+		<item name="android:text">@string/insp_card_ad_indicator</item>
+		<item name="android:textColor">@color/insp_card_ad_indicator</item>
+		<item name="android:textSize">@dimen/insp_card_ad_indicator_text</item>
+	</style>
+
+	<style name="insp_card_ad_title" parent="insp_card_title" />
+
+	<style name="insp_card_ad_description" parent="insp_card_description" />
+
+	<style name="insp_card_ad_rating" parent="insp_card_rating" />
+
+	<style name="insp_card_ad_url" parent="insp_card_url" />
+
+	<style name="insp_card_ad_actions" parent="insp_card_actions" />
+
+	<style name="insp_card_ad_deeplinks" parent="insp_card_deeplinks" />
+
+
+	<!-- Web Results -->
+
+	<style name="insp_card_web" parent="insp_card" />
+
+	<style name="insp_card_web_title" parent="insp_card_title" />
+
+	<style name="insp_card_web_description" parent="insp_card_description" />
+
+	<style name="insp_card_web_url" parent="insp_card_url" />
+
+	<style name="insp_card_web_actions" parent="insp_card_actions" />
+
+	<style name="insp_card_web_deeplinks" parent="insp_card_deeplinks" />
+
+	<style name="insp_card_ad_distance" parent="insp_card_distance" />
+
+
+	<!-- Related Group Results -->
+
+	<style name="insp_card_related_group" parent="insp_card" />
+
+	<style name="insp_card_related_group_title" parent="insp_card_title">
+		<item name="android:text">@string/insp_card_related_title</item>
+	</style>
+
+	<style name="insp_card_related_group_results">
+	</style>
+
+
+	<!-- Related Results -->
+
+	<style name="insp_card_related">
+		<item name="android:background">@drawable/insp_deeplink_bg</item>
+		<item name="android:padding">@dimen/insp_card_padding</item>
+		<item name="android:textColor">@color/insp_card_related_title</item>
+	</style>
+
+	<!-- Shopping Group Results -->
+
+	<style name="insp_card_shopping_group" parent="insp_card">
+		<item name="android:padding">@dimen/insp_card_border_width</item>
+	</style>
+
+	<style name="insp_card_shopping_group_title" parent="insp_card_title">
+		<item name="android:padding">@dimen/insp_card_padding</item>
+		<item name="android:text">@string/insp_card_shopping_title</item>
+	</style>
+
+	<style name="insp_card_shopping_group_results">
+		<item name="android:divider">@drawable/insp_card_divider</item>
+		<item name="android:showDividers">middle</item>
+
+		<item name="numVisibleItems">2.25</item>
+
+		<item name="android:animateLayoutChanges">true</item>
+		<item name="android:layoutAnimation">@anim/insp_card_result_controller</item>
+	</style>
+
+	<style name="insp_card_shopping_group_results_container">
+		<item name="android:fillViewport">true</item>
+		<item name="android:padding">@dimen/insp_card_padding</item>
+		<item name="android:clipToPadding">false</item>
+		<item name="android:scrollbarStyle">outsideOverlay</item>
+	</style>
+
+
+	<!-- Shopping Results -->
+
+	<style name="insp_card_shopping" parent="insp_card">
+		<item name="android:padding">0dp</item>
+	</style>
+
+	<style name="insp_card_shopping_image" />
+
+	<style name="insp_card_shopping_title" parent="insp_card_title">
+		<item name="android:lines">2</item>
+
+		<item name="android:paddingTop">@dimen/insp_card_field_spacing</item>
+		<item name="android:paddingBottom">0dp</item>
+	</style>
+
+	<style name="insp_card_shopping_rating" parent="insp_card_rating" />
+
+	<style name="insp_card_shopping_promo">
+		<item name="android:paddingTop">@dimen/insp_card_field_spacing</item>
+		<item name="android:textColor">@color/insp_card_shopping_promo_text</item>
+		<item name="android:textSize">@dimen/insp_card_shopping_promo_text</item>
+	</style>
+
+	<style name="insp_card_shopping_price">
+		<item name="android:paddingTop">@dimen/insp_card_field_spacing</item>
+		<item name="android:textColor">@color/insp_card_shopping_price_text</item>
+		<item name="android:textSize">@dimen/insp_card_shopping_price_text</item>
+	</style>
+
+	<style name="insp_card_shopping_badge">
+		<item name="android:background">@drawable/insp_card_shopping_badge_bg</item>
+		<item name="android:text">ON SALE</item>
+		<item name="android:textColor">@color/insp_card_shopping_badge_text</item>
+	</style>
+
+	<style name="insp_card_shopping_content">
+		<item name="android:padding">@dimen/insp_card_padding</item>
+	</style>
+
+
+	<!-- Deeplink Results -->
+
+	<style name="insp_card_deeplink">
+		<item name="android:background">@drawable/insp_deeplink_bg</item>
+		<item name="android:paddingLeft">@dimen/insp_card_padding</item>
+		<item name="android:paddingTop">@dimen/insp_card_padding</item>
+		<item name="android:paddingBottom">@dimen/insp_card_padding</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:lines">1</item>
+		<item name="android:textColor">@color/insp_card_related_title</item>
+	</style>
+
+
+	<!-- Base Action -->
+
+	<style name="insp_action">
+		<item name="android:background">@drawable/insp_action_bg</item>
+		<item name="android:clickable">true</item>
+		<item name="android:drawablePadding">@dimen/insp_card_field_spacing</item>
+	</style>
+
+	<style name="insp_action_title">
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@color/insp_action_text</item>
+		<item name="android:layout_gravity">center</item>
+		<item name="android:lines">1</item>
+		<item name="android:ellipsize">end</item>
+	</style>
+
+
+	<!-- Call Action -->
+
+	<style name="insp_action_call" parent="insp_action" />
+
+	<style name="insp_action_call_title" parent="insp_action_title">
+		<item name="android:drawableLeft">@drawable/insp_action_call</item>
+		<item name="android:text">@string/insp_action_call_title</item>
+	</style>
+
+
+	<!-- Directions Action -->
+
+	<style name="insp_action_directions" parent="insp_action" />
+
+	<style name="insp_action_directions_title" parent="insp_action_title">
+		<item name="android:drawableLeft">@drawable/insp_action_directions</item>
+		<item name="android:text">@string/insp_action_directions_title</item>
+	</style>
+
+
+	<!-- Email Action -->
+
+	<style name="insp_action_email" parent="insp_action" />
+
+	<style name="insp_action_email_title" parent="insp_action_title">
+		<item name="android:drawableLeft">@drawable/insp_action_email</item>
+		<item name="android:text">@string/insp_action_email_title</item>
+	</style>
+
+
+	<!-- Horoscope Results -->
+
+	<style name="insp_card_horoscope" parent="insp_card" />
+
+	<style name="insp_card_horoscope_image">
+		<item name="android:layout_marginRight">@dimen/insp_card_padding</item>
+	</style>
+
+	<style name="insp_card_horoscope_title" parent="insp_card_title">
+		<item name="android:paddingBottom">0dp</item>
+	</style>
+
+	<style name="insp_card_horoscope_date" parent="insp_card_subtitle">
+		<item name="android:layout_marginTop">@dimen/insp_card_field_spacing</item>
+		<item name="android:textColor">@color/insp_card_horoscope_date_text</item>
+		<item name="android:textAllCaps">true</item>
+	</style>
+
+	<style name="insp_card_horoscope_date_range" parent="insp_card_subtitle">
+		<item name="android:lines">1</item>
+		<item name="android:layout_marginLeft">@dimen/insp_card_padding</item>
+		<item name="android:textColor">@color/insp_card_horoscope_date_range_text</item>
+		<item name="android:textAllCaps">true</item>
+	</style>
+
+	<style name="insp_card_horoscope_description" parent="insp_card_description">
+		<item name="android:maxLines">25</item>
+
+		<item name="android:paddingBottom">0dp</item>
+		<item name="android:paddingTop">@dimen/insp_card_padding</item>
+	</style>
+
+
+	<!-- Weather Results -->
+
+	<style name="insp_card_weather" parent="insp_card">
+		<item name="android:divider">@drawable/insp_card_divider_line</item>
+		<item name="android:showDividers">middle</item>
+	</style>
+
+	<style name="insp_card_weather_container">
+		<item name="android:layout_marginBottom">@dimen/insp_card_padding</item>
+	</style>
+
+	<style name="insp_card_weather_title" parent="insp_card_title">
+		<item name="android:inputType">textCapWords</item>
+		<item name="android:paddingBottom">@dimen/insp_card_field_spacing</item>
+	</style>
+
+	<style name="insp_card_weather_description" parent="insp_card_description">
+		<item name="android:paddingBottom">@dimen/insp_card_field_spacing</item>
+		<item name="android:textColor">@color/insp_card_weather_description</item>
+	</style>
+
+	<style name="insp_card_weather_temperature">
+		<item name="android:textColor">@color/insp_card_weather_temperature</item>
+		<item name="android:textSize">@dimen/insp_card_weather_temperature</item>
+	</style>
+
+	<style name="insp_card_weather_wind_chill">
+		<item name="android:textColor">@color/insp_card_weather_wind</item>
+		<item name="android:textSize">@dimen/insp_card_weather_wind</item>
+	</style>
+
+	<style name="insp_card_weather_wind">
+		<item name="android:textColor">@color/insp_card_weather_wind</item>
+		<item name="android:textSize">@dimen/insp_card_weather_wind</item>
+
+	</style>
+
+	<style name="insp_card_weather_image" />
+
+	<style name="insp_card_weather_forecasts">
+		<item name="android:layout_marginTop">@dimen/insp_card_padding</item>
+
+		<item name="android:divider">@drawable/insp_card_divider_line</item>
+		<item name="android:showDividers">middle</item>
+	</style>
+
+
+	<!-- Weather ForecastResults -->
+
+	<style name="insp_card_weather_forecast">
+		<item name="android:gravity">center</item>
+		<item name="android:paddingLeft">@dimen/insp_card_padding</item>
+		<item name="android:paddingRight">@dimen/insp_card_padding</item>
+	</style>
+
+	<style name="insp_card_weather_forecast_title" parent="insp_card_title" />
+
+	<style name="insp_card_weather_forecast_date" parent="insp_card_subtitle" />
+
+	<style name="insp_card_weather_forecast_image">
+		<item name="android:layout_marginTop">@dimen/insp_card_field_spacing</item>
+		<item name="android:layout_marginBottom">@dimen/insp_card_field_spacing</item>
+	</style>
+
+	<style name="insp_card_weather_forecast_temperature" parent="insp_card_description">
+		<item name="android:paddingBottom">0dp</item>
+	</style>
+
+
+	<!-- Video Results -->
+
+	<style name="insp_card_video" parent="insp_card">
+		<item name="android:background">@drawable/insp_card_video_bg</item>
+	</style>
+
+	<style name="insp_card_video_image" />
+
+	<style name="insp_card_video_title" parent="insp_card_title">
+		<item name="android:lines">1</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:padding">@dimen/insp_card_padding</item>
+		<item name="android:textColor">@color/insp_card_video_title</item>
+	</style>
+
+	<style name="insp_card_video_url" parent="insp_card_url">
+		<item name="android:lines">1</item>
+		<item name="android:ellipsize">end</item>
+		<item name="android:padding">@dimen/insp_card_padding</item>
+		<item name="android:textColor">@color/insp_card_video_url</item>
+	</style>
+
+	<style name="insp_card_video_duration">
+		<item name="android:padding">@dimen/insp_card_padding</item>
+		<item name="android:textColor">@color/insp_card_video_duration</item>
+	</style>
+
+
+	<!-- News Results -->
+
+	<style name="insp_card_news" parent="insp_card" />
+
+	<style name="insp_card_news_title" parent="insp_card_title" />
+
+	<style name="insp_card_news_description" parent="insp_card_description" />
+
+	<style name="insp_card_news_source" parent="insp_card_source" />
+
+	<style name="insp_card_news_date" parent="insp_card_date" />
+
+	<style name="insp_card_news_deeplinks" parent="insp_card_deeplinks" />
+
+	<style name="insp_card_news_actions" parent="insp_card_actions" />
+
+
+	<!-- News Image Result -->
+
+	<style name="insp_card_news_image" parent="insp_card">
+		<item name="android:padding">@dimen/insp_card_border_width</item>
+	</style>
+
+
+	<!-- Image Result -->
+
+	<style name="insp_card_image" parent="insp_card">
+		<item name="android:padding">@dimen/insp_card_border_width</item>
+	</style>
+
+</resources>

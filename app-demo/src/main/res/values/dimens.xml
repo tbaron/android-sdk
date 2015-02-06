@@ -1,0 +1,7 @@
+<resources>
+
+	<dimen name="activity_margin">@dimen/insp_card_padding</dimen>
+
+	<dimen name="insp_card_width_max">450dp</dimen>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<string name="app_name">InfoSpace Cards</string>
+
+	<string name="action_title_github">GitHub</string>
+	<string name="action_url_github">https://github.com/infospace/android-sdk</string>
+
+
+	<string name="google_maps_api_key">AIzaSyBH_1dKbcknU6z7k1i49vEHBPWRqxpjy9E</string>
+
+</resources>

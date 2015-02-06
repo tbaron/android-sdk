@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	   android:shape="rectangle">
+
+	<corners
+		android:radius="@dimen/insp_card_ad_indicator_corner" />
+
+	<padding
+		android:bottom="@dimen/insp_card_ad_indicator_padding_vertical"
+		android:left="@dimen/insp_card_ad_indicator_padding_horizontal"
+		android:right="@dimen/insp_card_ad_indicator_padding_horizontal"
+		android:top="@dimen/insp_card_ad_indicator_padding_vertical" />
+
+	<solid
+		android:color="@android:color/transparent" />
+
+	<stroke
+		android:width="@dimen/insp_card_border_width"
+		android:color="@color/insp_card_ad_indicator" />
+
+</shape>
